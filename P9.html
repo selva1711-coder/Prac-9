@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Task Sphere</title> 
+<style> 
+ body{ 
+ font-family:arial,sans-serif; 
+ background-color:lavender; 
+ margin:20px; 
+ } 
+ .container{ 
+ width:500px; 
+ margin:auto; 
+ padding:15px; 
+ background-color:white; 
+ border-radius:10px; 
+  
+ } 
+ h1{ 
+ color:purple; 
+ text-align:center; 
+ text-transform:uppercase; 
+ }
+ 
+ h2{ 
+ color:purple; 
+ font-size:20px; 
+ } 
+ p{ 
+ color:black; 
+ font-size:15px; 
+ text-align:justify; 
+ } 
+ .img{ 
+ width:100px; 
+ height:250px; 
+ object-fit:cover; 
+ border-radius:8px; 
+ } 
+ .layout{ 
+ display:flex; 
+ gap:15px;  
+ } 
+ .box{ 
+ flex:1; 
+ padding:15px; 
+ border:1px-solid lightgray; 
+ background-color:skyblue; 
+ border-radius:8px;
+ } 
+ .box h3{ 
+ color:darkblue; 
+ } 
+ .box:hover{
+    transform:translate(-8px);
+    box-shadow:0 8px 15px rgba(128,0,128,0.25)
+ }
+.gallery-title{
+ text-align:center;
+ color:#555;
+ margin-top:30px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:15px;
+}
+
+ .gallery img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:transform 0.4s ease,
+               box-shadow 0.4 ease;
+   }
+
+   .gallery img:hover{
+      transform:scale(1.08);
+      box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);
+ }
+
+  footer{
+  text-align:center;
+  color:gray;
+  margin-top:20px;
+}
+
+  footer p{
+   text-align:center;
+  }
+
+  @keyframes fadeIn{
+    from{
+         opacity:0;
+     }
+     to{
+       opacity:1;
+     }
+}
+
+    @keyframes slideDown{
+        from{
+             transform:translateY(-25px);
+             opacity:0;
+            }
+         to{
+           transform:translateY(0);
+           opacity:1;
+          }
+    }
+
+  
+  @keyframes floatImage{
+   0%, 100%{
+       transform:translateY(0);
+       }
+    50%{
+  transform:translateY(-8px);
+     }
+ }
+
+@media(max-width:768px){
+  body{
+      padding:15px;
+ }
+
+  .container{
+ padding:15px;
+ }
+
+  .gallery{
+ grid-template-columns:repeat(3,1fr);
+  }
+
+  .gallery img{
+ height:120px;
+ }
+
+@media(max-width:480px){
+    body{
+    padding:10px;
+   }
+
+  .container{
+ padding:12px;
+ }
+
+ h1{
+ font-size:25px;
+   }
+
+  h2{
+ font-size:19px;
+     }
+
+ p{
+   font-size:14px;
+ }
+
+  .main-image{
+    height:180px;
+   }
+
+  .layout{
+      flex-direction:column;
+     }
+
+
+  .gallery{
+        grid-template-columns:(2,1fr);
+        gap:8px;
+      }
+
+    .gallery img{
+        height:100px;
+       }
+
+     .box{
+      width:100px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+ *,
+ *::before,
+ *::after{
+  animation:none !important;
+  transition:none !important;
+ }
+}
+
+</style> 
+</head> 
+<body> 
+<div class="container"> 
+<h1 align="center">TASK SPHERE</h1> 
+<img src="task spheree.jpeg" width="500" height="250" alt="Task Sphere"> 
+<h2>Welcome to Task Sphere</h2> 
+<p> Task Sphere is a smart and user-friendly platform designed to help people manage their daily  tasks easily. 
+It helps users organize their work,set deadlines,track progress,and complete their activities on time. Our goal is to make every task simple,organized,and productive. 
+</p> 
+<div class="layout"> 
+ <div class="box"> 
+ <h3>Task Management</h3> 
+ <p>Create and organize your daily tasks,set priorities,and manage your deadlines efficiently.</p>  </div> 
+ <div class="box"> 
+ <h3>Project Planning</h3> 
+ <p>Plan your projects,track your progress,and complete your work step by step</p>  </div> 
+</div>
+<h2 class="gallery-title">
+    Responsive Image Gallery
+</h2>
+<div class="gallery">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 1">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 2">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 3">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 4">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 5">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 6">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 7">
+    <img src="c:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 8">
+</div>
+
+<footer> 
+ <p>Task Sphere - Plan,organize and Achieve!</p> 
+</footer> 
+</div> 
+</body> 
+</html>
